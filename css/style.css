@@ -1,0 +1,99 @@
+/* Saffron - main stylesheet */
+
+/* Makes width include the padding and border,
+   so a box with width: 100% never spills out */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff8ec;
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* ===== CSS BOX MODEL: header, nav, main, footer ===== */
+
+header {
+  color: #8a4b08;
+  font-style: italic;
+  width: 100%;                  /* width   */
+  border: 3px solid #e3a008;    /* border  */
+  padding: 20px;                /* padding */
+  margin: 0 0 20px 0;           /* margin: 20px space below */
+}
+
+nav {
+  width: 100%;                  /* width   */
+  border: 1px solid #e0c9a6;    /* border  */
+  padding: 10px 15px;           /* padding: 10px top/bottom, 15px left/right */
+  margin: 15px 0 0 0;           /* margin: 15px space above */
+  background-color: #ffffff;
+}
+
+nav ul {
+  margin: 0;                    /* removes the list's default margin inside nav */
+}
+
+main {
+  width: 100%;                  /* width   */
+  border: 2px solid #e0c9a6;    /* border  */
+  padding: 20px 25px;           /* padding */
+  margin: 0 0 20px 0;           /* margin: 20px space below */
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #e3a008;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #8a4b08;
+}
+
+ul {
+  font-weight: bold;
+  font-style: normal;
+  list-style-type: square;
+}
+
+a {
+  color: #b5410f;
+}
+
+p {
+  color: #3b2f2f;
+  font-size: 17px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #e0c9a6;
+  padding: 10px;
+  vertical-align: top;
+}
+
+td.price {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+footer {
+  font-size: 12px;
+  color: #7a6a58;
+  width: 100%;                  /* width   */
+  border: 1px solid #e0c9a6;    /* border  */
+  border-top: 3px solid #e3a008;
+  padding: 10px 20px;           /* padding */
+  margin: 30px 0 0 0;           /* margin: 30px space above */
+}
